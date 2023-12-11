@@ -1,0 +1,49 @@
+{
+    "Livro": [
+        {
+            "PutRequest": {
+                "Item": {
+ 			 "Autor": {"S": "Machado de Assis"},
+ 			 "Titulo": {"S": "Dom Casmurro"},
+ 			 "Editora": {"S": "Ciranda Cultural"}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+		"Item": {
+ 			 "Autor": {"S": "Machado de Assis"},
+ 			 "Titulo": {"S": "Helena"},
+ 			 "Editora": {"S": "Abril"}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+		"Item": {
+ 			 "Autor": {"S": "José de Alencar"},
+ 			 "Titulo": {"S": "Cinco Minutos"},
+ 			 "Editora": {"S": "Abril"}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+		"Item": {
+ 			 "Autor": {"S": "José de Alencar"},
+ 			 "Titulo": {"S": "O Guarani"},
+ 			 "Editora": {"S": "Cartano"}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+		"Item": {
+ 			 "Autor": {"S": "José de Alencar"},
+ 			 "Titulo": {"S": "Iracema"},
+ 			 "Editora": {"S": "Abril"}
+                }
+            }
+        }
+      ]
+}
