@@ -17,3 +17,7 @@ aws dynamodb create-table \
 aws dynamodb put-item \
     --table-name Music \
     --item file://livro.json \
+
+## Comando para adicionar múltiplos registros:
+aws dynamodb batch-write-item \
+    --request-items file://livros.json
