@@ -12,3 +12,8 @@ aws dynamodb create-table \
         AttributeName=Titulo,KeyType=RANGE \
     --provisioned-throughput \
         ReadCapacityUnits=10,WriteCapacityUnits=5
+
+## Comando para adicionar registro:
+aws dynamodb put-item \
+    --table-name Music \
+    --item file://livro.json \
