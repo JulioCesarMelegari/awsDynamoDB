@@ -21,3 +21,16 @@ aws dynamodb put-item \
 ## Comando para adicionar múltiplos registros:
 aws dynamodb batch-write-item \
     --request-items file://livros.json
+
+## Comando para pesquisar livro por autor:
+aws dynamodb query \
+    --table-name livro \
+    --key-condition-expression "Autor = :autor" \
+    --expression-attribute-values  '{":autor":{"S":"Machado de Assis"}}'
+
+## Comando para pesquisar livro por autor e Titulo da obra:
+aws dynamodb query \
+    --table-name livro \
+    --key-condition-expression "Autor = :autor and Titulo = :titulo" \
+    --expression-attribute-values '{":autor":{"S":"José de Alencar"}, ":titulo":{"S":"O Guarani"}
+}
